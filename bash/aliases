@@ -13,10 +13,6 @@ alias la="ls -AF"
 alias a="la"
 alias lo="ls -AF1"
 alias ll="ls -AFhl"
-alias pi="ssh pi@192.168.0.12"
-
-# Build InventoryBase from develop branch and deploy that shit
-alias dbd="./devbuild && ./deploy"
 
 . ~/.bin/dotfiles/bash/aliases-git
 
@@ -69,22 +65,6 @@ function j() {
 		jump $@
 	fi
 }
-
-# Apache
-alias apache="sudo /usr/sbin/apachectl"
-alias a2r="sudo /usr/sbin/httpd -k restart"
-alias httpd="sudo /usr/sbin/httpd"
-
-# MySQL
-#function mysql() {
-#	if [ $# -eq 0 ]; then
-#		/usr/local/Cellar/mysql/5.6.10/bin/mysql -u root
-#	else
-#		/usr/local/Cellar/mysql/5.6.10/bin/mysql.server $@
-#	fi
-#}
-
-alias ibdb="/usr/local/Cellar/mysql/5.6.10/bin/mysql -u root inventorybase"
 
 # Restart wireless
 alias resetip="sudo ipconfig set en1 BOOTP; sudo ipconfig set en1 DHCP"
