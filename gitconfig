@@ -1,8 +1,8 @@
 [user]
-	name = Alex Potter
-	email = alex.potter1993@gmail.com
+    name = Luke Austin
+    email = lukeaustin8@gmail.com
 [core]
-	excludesfile = /Users/alexpotter/.gitignore
+	excludesfile = /Users/radweb_mini/.gitignore
 	quotepath = false
 	autocrlf = input
 [mergetool]
